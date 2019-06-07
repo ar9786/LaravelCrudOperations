@@ -1,0 +1,38 @@
+ <Files index.php>
+        Satisfy any
+        Order deny,allow
+       # Deny from all
+        Allow from 82.62.157.178
+
+        #AuthType Basic
+        #AuthName "private"
+        #AuthUserFile /var/www/phpexperts.pro/.htpasswd
+        #AuthGroupFile /dev/null
+        #Require valid-user
+</Files>
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+	#Force SSL
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

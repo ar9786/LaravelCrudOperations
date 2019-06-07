@@ -1,0 +1,122 @@
+@media only screen 
+and (min-width : 992px)  {
+	/* shrinked body css starts here */
+	.bodyshrink .left_sidebar{width: 50px;}
+	.bodyshrink .glogo_text{display: block;height: 66px; line-height: 66px; text-align: center;background-color: #d1a12a;}
+	.bodyshrink .glogo_text:hover,.bodyshrink .glogo_text:focus{color:#ffffff;}
+	.bodyshrink .left_sidebar{width: 70px;}
+	.bodyshrink .sidebar_logo{padding: 3px;}
+
+	.bodyshrink .top_strip{width: calc(100% - 70px);}
+	.bodyshrink .main_menu_list>li>a{text-align: center;font-size: 18px;}
+	.bodyshrink .profile_info,.bodyshrink .main_menu_list>li>a span,.bodyshrink .glogo{display: none;}
+	.bodyshrink .right_sidebar{margin-left: 70px;}
+	/* / shrinked body css ends here */
+}
+
+
+
+@media only screen 
+and (min-width : 1200px)  {
+	.col-xls-2 {flex: 0 0 20%; max-width: 20%;}
+}
+
+@media only screen 
+and (min-width : 1600px)  {
+	
+}
+
+
+@media only screen 
+and (max-width : 1199px)
+and (min-width : 992px)  {
+	
+}
+
+@media only screen 
+and (max-width : 991px)
+and (min-width : 769px)  {
+	.footer_info{margin-top: 40px;}
+}
+
+
+@media only screen 
+and (min-width : 992px)  {
+	body#section1{padding-right: 0 !important;overflow-y: scroll;}
+	
+}
+
+@media only screen 
+and (min-width : 769px)  {
+	
+}
+
+
+
+@media only screen 
+and (max-width : 991px){
+	.container{width: 100%;max-width: 100%;}
+	.left_sidebar{left: -250px;}
+	.bodyshrink .left_sidebar{left:0;top: 66px;border-top: 1px solid #0e6a8a;}
+	.right_sidebar{margin-left: 0;}
+	.top_strip{width: 100%;padding-left: 15px;padding-right: 15px;}
+	.trigger_aside{font-size: 18px;}
+	.glogo{display: none;}
+	.login_content{margin-top: 50px;}
+	.main_heading.pr_hamb:before, .main_heading.ap_hamb:after{display: none;}
+	.main_heading{font-size: 24px;}
+	.btn_shadowed{min-width: 120px; padding: 5px 10px !important; font-size: 16px;}
+
+	.the_caption_data span.text-uppercase{font-size: 20px;margin-top: 5px;}
+	.tabmenu_ofindex ul{margin-bottom: 0;}
+	.tabmenu_ofindex a:hover{box-shadow: 0 0 2px #000000;}
+	.the_caption_top{top: 40%;}
+	.blockspacing{padding: 30px 0;}
+
+
+
+
+}
+
+
+@media only screen 
+and (max-width : 768px){
+		.gototop{right: 30px;}
+		.newsletter_form{max-width: 300px; margin: auto;}
+		.footer_info{margin-top: 40px;}
+		.close_modal_btn{top: 2px;right: 2px;border-radius: 0;}
+}		
+
+@media only screen 
+and (max-width : 575px){
+	.thecontent .main_heading {margin-top: 30px;}
+}
+
+
+@media only screen 
+and (max-width : 527px){
+	.camp_btns>.camp_btn{margin-bottom: 20px; margin-right: 0;}
+}
+
+
+@media only screen 
+and (max-width : 480px){
+	.theForm_wrap .list-inline-item:not(:last-child){margin-right: 0 !important;}
+	.theForm_wrap .list-inline-item{display: block !important;text-align: center;}
+	.theForm_wrap .list-inline-item>a{max-width: 144px;margin-left: auto;margin-right: auto;display: block;margin-bottom: 5px;}
+	#signup_modal .row>div{max-width: 100%; flex: 0 0 100%;}
+	.forgot_pass ,.remember_pass{font-size: .8rem;}
+	.forgot_pass>p{margin: 0 !important;text-align: left !important;}
+
+}
+
+@media only screen 
+and (max-width : 360px){
+	/* Styles */
+	.social_list a img{max-width: 34px;}
+}
+
+@media only screen 
+and (max-width : 221px){
+	/* Styles */
+}
